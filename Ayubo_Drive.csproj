@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD66772B-E1C0-4F62-A3F0-1F6645D3B284}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ayubo_Drive</RootNamespace>
+    <AssemblyName>Ayubo_Drive</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_dashboard.Designer.cs">
+      <DependentUpon>Admin_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Login.Designer.cs">
+      <DependentUpon>Admin_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AyuboDrive_TaxiDBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AyuboDrive_TaxiDBDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Form.Designer.cs">
+      <DependentUpon>Customer_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driver_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Driver_Form.Designer.cs">
+      <DependentUpon>Driver_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hire_Form.Designer.cs">
+      <DependentUpon>Hire_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_dashboard.Designer.cs">
+      <DependentUpon>Login_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reception_Customer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reception_Customer_Form.Designer.cs">
+      <DependentUpon>Reception_Customer_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reception_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reception_Dashboard.Designer.cs">
+      <DependentUpon>Reception_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reception_Driver_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reception_Driver_Form.Designer.cs">
+      <DependentUpon>Reception_Driver_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reception_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reception_Form.Designer.cs">
+      <DependentUpon>Reception_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reception_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reception_Login.Designer.cs">
+      <DependentUpon>Reception_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reception_Vehicle_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reception_Vehicle_Form.Designer.cs">
+      <DependentUpon>Reception_Vehicle_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rent_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent_Form.Designer.cs">
+      <DependentUpon>Rent_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle_Form.Designer.cs">
+      <DependentUpon>Vehicle_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_dashboard.resx">
+      <DependentUpon>Admin_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Login.resx">
+      <DependentUpon>Admin_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Form.resx">
+      <DependentUpon>Customer_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driver_Form.resx">
+      <DependentUpon>Driver_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire_Form.resx">
+      <DependentUpon>Hire_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_dashboard.resx">
+      <DependentUpon>Login_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reception_Customer_Form.resx">
+      <DependentUpon>Reception_Customer_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reception_Dashboard.resx">
+      <DependentUpon>Reception_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reception_Driver_Form.resx">
+      <DependentUpon>Reception_Driver_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reception_Form.resx">
+      <DependentUpon>Reception_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reception_Login.resx">
+      <DependentUpon>Reception_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reception_Vehicle_Form.resx">
+      <DependentUpon>Reception_Vehicle_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rent_Form.resx">
+      <DependentUpon>Rent_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle_Form.resx">
+      <DependentUpon>Vehicle_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AyuboDrive_TaxiDBDataSet.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet1.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet1.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet10.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet10.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet11.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet11.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet2.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet2.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet3.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet3.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet4.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet4.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet5.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet5.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet6.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet6.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet7.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet7.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet8.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet8.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet9.xsc">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AyuboDrive_TaxiDBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AyuboDrive_TaxiDBDataSet9.xss">
+      <DependentUpon>AyuboDrive_TaxiDBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
